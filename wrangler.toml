@@ -1,0 +1,7 @@
+name = "product-builder-pront"
+compatibility_date = "2026-01-10"
+
+# This configuration tells Wrangler to treat your project as a static site.
+# It will serve the files from the directory specified in 'bucket'.
+[site]
+bucket = "."
