@@ -1,1 +1,198 @@
-/* Add styles here */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Orbitron:wght@400;700&display=swap');
+
+:root {
+    --shadow-color: rgba(252, 163, 17, 0.5);
+    --glow-shadow: 0 0 15px var(--shadow-color);
+}
+
+body.dark-mode {
+    --background-color: #1a1a2e;
+    --primary-color: #e0e0e0;
+    --highlight-color: #fca311;
+    --container-bg: #162447;
+    --button-bg: #fca311;
+    --button-text-color: #1a1a2e;
+    --lotto-number-bg: #1f4068;
+    --gradient-start: #1a1a2e;
+    --gradient-mid: #162447;
+    --gradient-end: #1f4068;
+    --container-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0,0,0,0.5);
+    --lotto-set-bg: rgba(0,0,0,0.2);
+    --lotto-number-shadow: 0 2px 5px rgba(0,0,0,0.5), inset 0 2px 5px rgba(255,255,255,0.1);
+}
+
+body.light-mode {
+    --background-color: #f0f2f5;
+    --primary-color: #333;
+    --highlight-color: #d6336c;
+    --container-bg: #ffffff;
+    --button-bg: #d6336c;
+    --button-text-color: #ffffff;
+    --lotto-number-bg: #e9ecef;
+    --gradient-start: #f0f2f5;
+    --gradient-mid: #e9ecef;
+    --gradient-end: #dfe3e8;
+    --container-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --lotto-set-bg: #f8f9fa;
+    --lotto-number-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Nanum Pen Script', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
+    color: var(--primary-color);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    background-color: var(--container-bg);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--container-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 90%;
+    width: 500px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-toggle {
+    background: var(--button-bg);
+    color: var(--button-text-color);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+    color: var(--highlight-color);
+    text-shadow: 0 0 10px var(--shadow-color), 0 0 20px var(--shadow-color);
+    margin: 0 0 10px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+body.light-mode header h1 {
+    text-shadow: none;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 0 0 30px;
+    opacity: 0.8;
+}
+
+.lotto-numbers-container {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.lotto-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--lotto-set-bg);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.lotto-number {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.4em;
+    color: var(--primary-color);
+    background-color: var(--lotto-number-bg);
+    box-shadow: var(--lotto-number-shadow);
+    transition: all 0.3s ease;
+}
+
+.generate-button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--glow-shadow);
+    text-transform: uppercase;
+}
+
+.generate-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px var(--shadow-color), 0 5px 15px rgba(0,0,0,0.4);
+}
+
+body.light-mode .generate-button {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode .generate-button:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1em;
+    opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2.2em;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    .lotto-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1em;
+    }
+    .generate-button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
