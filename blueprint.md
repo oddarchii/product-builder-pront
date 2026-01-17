@@ -57,3 +57,5 @@ This project is a Lotto Number Generator web application. The primary goal is to
 5.  **Review and Deploy:**
     - Thoroughly check for broken links, styling issues, and console errors.
     - Deploy the updated, high-quality site.
+6.  **Integrate MS Clarity:**
+    - Add the MS Clarity tracking script to all HTML files (`index.html`, `about.html`, `contact.html`, `privacy.html`, `blog.html`) before the closing `</body>` tag to enable user behavior analytics.

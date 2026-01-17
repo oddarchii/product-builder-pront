@@ -566,3 +566,26 @@
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
 [debug] [2026-01-17T05:41:29.943Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
 [debug] [2026-01-17T05:41:29.943Z] > authorizing via signed-in user (oddarchii@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-17T06:21:47.448Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-17T06:21:47.449Z] > authorizing via signed-in user (oddarchii@gmail.com)
+[debug] [2026-01-17T06:21:47.452Z] Checked if tokens are valid: true, expires at: 1768632085968
+[debug] [2026-01-17T06:21:47.452Z] Checked if tokens are valid: true, expires at: 1768632085968
+[debug] [2026-01-17T06:21:47.453Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/productbuilder-week1-002-cca95/billingInfo [none]
+[debug] [2026-01-17T06:21:47.722Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/productbuilder-week1-002-cca95/billingInfo 200
+[debug] [2026-01-17T06:21:47.723Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/productbuilder-week1-002-cca95/billingInfo {"name":"projects/productbuilder-week1-002-cca95/billingInfo","projectId":"productbuilder-week1-002-cca95","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-17T06:21:47.731Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-17T06:21:47.731Z] > authorizing via signed-in user (oddarchii@gmail.com)
+[debug] [2026-01-17T06:21:47.732Z] Checked if tokens are valid: true, expires at: 1768632085968
+[debug] [2026-01-17T06:21:47.732Z] Checked if tokens are valid: true, expires at: 1768632085968
+[debug] [2026-01-17T06:21:47.732Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/productbuilder-week1-002-cca95/billingInfo [none]
+[debug] [2026-01-17T06:21:47.988Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/productbuilder-week1-002-cca95/billingInfo 200
+[debug] [2026-01-17T06:21:47.989Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/productbuilder-week1-002-cca95/billingInfo {"name":"projects/productbuilder-week1-002-cca95/billingInfo","projectId":"productbuilder-week1-002-cca95","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-17T06:21:47.991Z] Checked if tokens are valid: true, expires at: 1768632085968
+[debug] [2026-01-17T06:21:47.991Z] Checked if tokens are valid: true, expires at: 1768632085968
+[debug] [2026-01-17T06:21:47.991Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/productbuilder-week1-002-cca95 [none]
+[debug] [2026-01-17T06:21:48.791Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/productbuilder-week1-002-cca95 200
+[debug] [2026-01-17T06:21:48.793Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/productbuilder-week1-002-cca95 {"projectNumber":"504878530004","projectId":"productbuilder-week1-002-cca95","lifecycleState":"ACTIVE","name":"Firebase app","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2026-01-10T11:23:19.732246Z"}
